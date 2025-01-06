@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+   font-family: rejoye;
+   src: url(./Rejouice-Headline.woff2);
+}
+
+@font-face {
+   font-family: nb;
+   src: url(./NBInternationalProBoo.woff2);
+}
+
+* {
+   padding: 0px;
+   margin: 0px;
+   font-family: "nb";
+   box-sizing: border-box;
+}
+body,html{
+
+   height: 100%;
+   width: 100%;
+}
+nav{
+   /* position: fixed; */
+   z-index: 10000;
+}
+nav i{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5vw;
+   font-size: 5vw;
+   z-index: 10000;
+   /* position: fixed; */
+   left: 85%;
+
+   
+}
+#full-scr{
+   transition: all ease 1s;
+   z-index: 5;
+}
+
+#loder {
+   top: 0;
+   height: 100vh;
+   width: 100%;
+   background: #000;
+   position: fixed;
+   z-index: 99;
+   display: flex;
+/*    display: none; */
+   justify-content: center;
+   align-items: center;
+   gap: 1vw;
+ 
+}
+
+#loder h1 {
+   text-transform: uppercase;
+   font-size: 3vw;
+   font-weight: 800;
+   z-index: 99;
+
+}
+
+
+#page1-content #main-bg-name {
+   font-family: "rejoye";
+ 
+}
+
+#page1-content #main-bg-name span {
+   display: inline-block;
+}
+
+#corsor {
+   z-index: 10;
+   transform: translate(80%, 90%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+#corsor a {
+   z-index: 20;
+}
+
+#box2,
+#box3,
+#box1 {
+   position: relative;
+}
+
+#box2 img {
+   position: absolute;
+   transition: all ease 1.5s;
+}
+
+#box3 img {
+   position: absolute;
+   transition: all ease 1.5s;
+}
+
+#box1 img {
+   position: absolute;
+   transition: all ease 1.5s;
+}
+
+#box2:hover img {
+   opacity: 0;
+}
+
+#box3:hover img {
+   opacity: 0;
+}
+
+
+
+#box1:hover img {
+   opacity: 0;
+}
+
+.swiper {
+   width: 100%;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.swiper-slide {
+   object-fit: cover;
+   background-position: center;
+   background-size: cover;
+   
+}
+
+.swiper-slide img {
+
+   display: block;
+   width: 100%;
+}
+.animated-text a { 
+   color: inherit;
+   text-decoration: none;
+   position: relative;
+ 
+   font-weight: 400;
+}
+
+
+.animated-text a:before,
+.animated-text a:after {
+   content: '';
+   display: block;
+   height: 0.05em; 
+   width: 100%;
+   background:black;
+   position: absolute;
+   top: 100%; 
+   left: 0;
+   margin-top: -0.1em;
+   will-change: transform;
+   transform-origin: 100% 0;
+   z-index: -1;
+}
+
+
+.animated-text a:before {
+   transform: scaleX(0) translateZ(0);
+   transition: transform 0.5s cubic-bezier(0.430, 0.195, 0.020, 1.000);
+}
+
+.animated-text a:after {
+   transform-origin: 0% 0;
+   transform: scaleX(1) translateZ(0);
+   transition: transform 0.5s 0.1s cubic-bezier(0.430, 0.195, 0.020, 1.000);
+}
+
+.animated-text a:hover:before {
+   transform: scaleX(1) translateZ(0);
+   transform-origin: 0% 0;
+   transition: transform 0.5s 0.1s cubic-bezier(0.430, 0.195, 0.020, 1.000);
+}
+
+.animated-text a:hover:after {
+   transform: scaleX(0) translateZ(0);
+   transform-origin: 100% 0;
+   transition: transform 0.5s cubic-bezier(0.430, 0.195, 0.020, 1.000);
+}
+
+.animated-text sup a:before,
+.animated-text sup a:after  {
+   display: none;
+}
+
