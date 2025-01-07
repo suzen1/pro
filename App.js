@@ -10,7 +10,9 @@ function loder() {
       x: 300,
       opacity: 1,
       duration: 1,
-      stagger: 0.1
+      stagger: 0.1,
+      
+
    })
    tl.to("#loder h1", {
       stagger: 0.1,
